@@ -26,7 +26,7 @@ if (playerNumber > pcNumber) {
 
 // CREO I MESSAGGI PER LA STAMPA FINALE
     // CREO LA COSTANTE 'msgNumbers' CONTENENTE I NUMERI ESTRATTI PRECEDENTEMENTE
-let msgNumbers = `Giocatore: ${playerNumber} - Computer: ${pcNumber} -`
+const msgNumbers = `Giocatore: ${playerNumber} - Computer: ${pcNumber} -`
 
     // CREO LA COSTANTE 'msg' CON IL MESSAGGIO DEL VINCITORE
 const msg = `${msgNumbers} Ha vinto il ${winner}!`;
@@ -36,13 +36,13 @@ const msgPar = `${msgNumbers} Risultato di parità. Non ha vinto nessuno!`;
 
 
 // STAMPO IL MESSAGGIO CON IL RISULTATO 
-    // SELEZIONO ELEMENTO HTML PER STAMPA
-let result = document.getElementById('result');
+    // SELEZIONO L'ELEMENTO HTML PER LA STAMPA
+const result = document.getElementById('result');
 
-    // SE C'E' UN VINCITORE STAMPO 'msg'
-if (winner !== 'nobody') {
-    result.innerHTML = msg;
-    // ALTRIMENTI STAMPO IL MESSAGGIO DI PARITA' 'msgPar'
-} else {
+    // SE NON C'E' UN VINCITORE STAMPO IL MESSAGGIO DI PARITA' 'msgPar'
+if (winner === 'nobody') {
     result.innerHTML = msgPar;
+    // ALTRIMENTI STAMPO IL MESSAGGIO CON IL VINCITORE 'msg'
+} else {
+    result.innerHTML = msg;
 };
