@@ -10,8 +10,8 @@ const playerNumber = Math.floor(Math.random() * 9) + 1;
 const pcNumber = Math.floor(Math.random() * 9) + 1;
 
 
-// CREO LA VARIABILE 'winner' PER SALVARE CHI HA VINTO
-let winner = 'nobody';
+// CREO LA VARIABILE 'winner' PER SALVARE SE QUALCUNO HA VINTO 
+let winner;
 
 
 // CONFRONTO I NUMERI DEL GIOCATORE E DEL COMPUTER PER DETERMINARE CHI HA VINTO
@@ -21,6 +21,9 @@ if (playerNumber > pcNumber) {
     // SE 'pcNumber' E' MAGGIORE DI 'playerNumber' ALLORA "winner = 'GIOCATORE'"
 } else if (playerNumber < pcNumber) {
     winner = 'Computer';
+    // ALTRIMENTI IL RISULTATO SARA' DI PARITA' SENZA VINCITORI
+} else {
+    winner = 'nobody';
 };
 
 
