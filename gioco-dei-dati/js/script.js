@@ -28,13 +28,13 @@ if (playerNumber > pcNumber) {
 
 
 // CREO I MESSAGGI PER LA STAMPA FINALE
-    // CREO LA COSTANTE 'msgNumbers' CONTENENTE IL MESSAGGIO CON I NUMERI ESTRATTI PRECEDENTEMENTE
+    // CREO LA COSTANTE 'msgNumbers' CHE CONTIENE IL MESSAGGIO CON I NUMERI ESTRATTI PRECEDENTEMENTE
 const msgNumbers = `Giocatore: ${playerNumber} - Computer: ${pcNumber} - `
 
-    // CREO LA COSTANTE 'msgWin' COMPOSTA DAL MESSAGGIO CON I NUMERI ESTRATTI 'msgNumbers' PIU' IL MESSAGGIO DEL VINCITORE 'msgWin'
+    // CREO LA COSTANTE 'msgWin' CHE CONTIENE IL MESSAGGIO DEL VINCITORE
 const msgWin = `Ha vinto il ${winner}!`;
 
-    // CREO LA COSTANTE 'msgDraw' COMPOSTA DAL MESSAGGIO CON I NUMERI ESTRATTI 'msgNumbers' PIU' IL MESSAGGIO DI PARITA' 'msgDraw'
+    // CREO LA COSTANTE 'msgDraw' CHE CONTIENE IL MESSAGGIO DI PARITA'
 const msgDraw = `Risultato di parità. Non ha vinto nessuno!`;
 
 
