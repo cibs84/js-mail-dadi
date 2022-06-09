@@ -24,12 +24,12 @@ if (playerNumber > pcNumber) {
     // ALTRIMENTI IL RISULTATO SARA' DI PARITA' SENZA VINCITORI
 } else {
     winner = 'nobody';
-};
+}
 
 
 // CREO I MESSAGGI PER LA STAMPA FINALE
     // CREO LA COSTANTE 'msgNumbers' CHE CONTIENE IL MESSAGGIO CON I NUMERI ESTRATTI PRECEDENTEMENTE
-const msgNumbers = `Giocatore: ${playerNumber} - Computer: ${pcNumber} - `
+const msgNumbers = `Giocatore: ${playerNumber} - Computer: ${pcNumber} - `;
 
     // CREO LA COSTANTE 'msgWin' CHE CONTIENE IL MESSAGGIO DEL VINCITORE
 const msgWin = `Ha vinto il ${winner}!`;
@@ -50,4 +50,4 @@ if (winner === 'nobody') {
     // ALTRIMENTI STAMPO IL MESSAGGIO CON IL VINCITORE 'msgWin' CONCATENANDOLO A 'msgNumbers' NELL'ELEMENTO 'result'
 } else {
     result.innerHTML += msgWin;
-};
+}
