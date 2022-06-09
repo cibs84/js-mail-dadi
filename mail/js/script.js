@@ -22,7 +22,7 @@ for (let i = 0; i < eMails.length; i++) {
     if (userEmail === thisEmail) {
         eMailFound = true; 
     }
-};
+}
 
 // STAMPO UN MESSAGIO SULL'ESITO DEL CONTROLLO
     // CREO LA VARIABILE 'msg' PER IL MESSAGGIO DA STAMPARE
@@ -33,7 +33,7 @@ if (eMailFound === true) {
     // ALTRIMENTI DICO CHE L'EMAIL NON SI TROVA NELL'ELENCO
 } else {
     msg = `L'email inserita NON è presente nell'elenco`;
-};
+}
 
     // STAMPA MESSAGGIO IN HTML
 document.querySelector('h1').innerHTML = msg;
